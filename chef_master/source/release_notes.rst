@@ -1005,7 +1005,7 @@ Notes about FIPS:
 * Should only be enabled for environments that require FIPS 140-2 compliance
 * May not be enabled for any version of the chef-client earlier than 12.8
 
-*New in Chef client 12.8, support for OpenSSL validation of FIPS.*
+New in Chef client 12.8, support for OpenSSL validation of FIPS.
 
 .. end_tag
 
