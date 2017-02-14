@@ -635,4 +635,3 @@ The response is similar to:
      - Invalid request. The protocol version is incorrect.
 
 .. end_tag
-
