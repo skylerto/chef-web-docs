@@ -68,7 +68,12 @@ This command has the following options:
 
    This option is only available on machines that run in UNIX or Linux environments. For machines that are running Microsoft Windows that require similar functionality, use the ``chef-client::service`` recipe in the ``chef-client`` cookbook: https://supermarket.chef.io/cookbooks/chef-client. This will install a chef-client service under Microsoft Windows using the Windows Service Wrapper.
 
-   New in Chef client 12.9.
+   *New in Chef client 12.9.*
+
+``--delete-entire-chef-repo``
+   This option deletes an entire repository.  This option may only be used when running the chef-client in local mode (``--local-mode``).  This option requires ``--recipe-url` to be specified.
+
+   *New in Chef client 12.7*
 
 ``--delete-entire-chef-repo``
    This option deletes an entire repository.  This option may only be used when running the chef-client in local mode, (``--local-mode``).  This option requires ``--recipe-url`` to be specified.
@@ -400,7 +405,7 @@ Notes about FIPS:
 * Should only be enabled for environments that require FIPS 140-2 compliance
 * May not be enabled for any version of the chef-client earlier than 12.8
 
-New in Chef client 12.8, support for OpenSSL validation of FIPS.
+*New in Chef client 12.8, support for OpenSSL validation of FIPS.*
 
 .. end_tag
 
