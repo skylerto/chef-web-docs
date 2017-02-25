@@ -80,7 +80,7 @@ This command has the following options:
 ``--delete-entire-chef-repo``
    This option deletes an entire repository.  This option may only be used when running the chef-client in local mode, (``--local-mode``).  This option requires ``--recipe-url`` to be specified.
 
-   New in Chef client 12.7
+   New in Chef Client 12.7
 
 ``--disable-config``
    Use to run the chef-client using default settings. This will prevent the normally-associated configuration file from being used. This setting should only be used for testing purposes and should never be used in a production setting.
@@ -361,7 +361,7 @@ About chef-zero
 -----------------------------------------------------
 chef-zero is a very lightweight Chef server that runs in-memory on the local machine. This allows the chef-client to be run against the chef-repo as if it were running against the Chef server. chef-zero was `originally a standalone tool <https://github.com/chef/chef-zero>`_; it is enabled from within the chef-client by using the ``--local-mode`` option. chef-zero is very useful for quickly testing and validating the behavior of the chef-client, cookbooks, recipes, and run-lists before uploading that data to the actual Chef server.
 
-As of Chef client 12.8, chef-zero supports all Chef server API version 12 endpoints, except ``/universe``.
+Changed in Chef Client 12.8, now chef-zero supports all Chef server API version 12 endpoints, except ``/universe``.
 
 Use Encrypted Data Bags
 -----------------------------------------------------
