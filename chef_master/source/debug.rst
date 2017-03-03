@@ -933,6 +933,7 @@ This command has the following options:
 
    Changed in Chef Client 12.0, unforked interval runs are no longer allowed.
 
+
 ``-F FORMAT``, ``--format FORMAT``
    .. tag ctl_chef_client_options_format
 
